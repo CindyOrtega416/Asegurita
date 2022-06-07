@@ -29,7 +29,7 @@ export default function Login() {
 
     }
     return (
-        <section class="vh-100" style={{backgroundColor:" white"}}>
+        <section class="vh-100" style={{backgroundColor:" lightblue"}}>
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col col-xl-10">
