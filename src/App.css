@@ -11,8 +11,33 @@
 
 }
 
+.denuncias {
+  background-color:#ffffff;
+  width: 30vw;
+  border-radius:19px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  position:fixed;
+  margin-left: 35vw;
+  margin-top: -30vw;
+  color: rgb(48, 47, 47);
+  text-align:"center";
+
+}
+
+.map {
+
+  position:fixed;
+  margin-left: 10vw;
+  margin-top: 5vw;
+
+}
+
+.nav{
+  background-color:"#77C4EE";
+  margin-left: -5.2vw;
 
 
+}
 
 .colorb{
   background-color: #77C4EE;

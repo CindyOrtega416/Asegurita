@@ -194,7 +194,7 @@ function MapPicker() {
 
 
     return (
-        <div>
+        <div className='map'>
         
             <div>
                 <Map ref={mapRef} center={[-31.4167, -64.18]} zoom={13}>
@@ -230,10 +230,10 @@ function MapPicker() {
 
                 </Map>
             </div>
-            <section class='col-lg-6 my-4  align-items-center' style={{backgroundColor:" #77C4EE",borderRadius:"12px", marginLeft:"-2000"}}>
-
-                <p style={{ color: 'white',
-                    fontWeight: "900", fontSize: "20px", textAlign:"left" }}>Denuncias</p>
+            <section class='denuncias' >
+               
+                <h2 style={{ 
+                    fontWeight: "900", fontSize: "20px", marginLeft:'20px', marginTop:'10px'}}> DENUNCIAS</h2>
                 {
                     storeData.map(x => {
                         return (
@@ -241,7 +241,7 @@ function MapPicker() {
 
                                     <ul >
                                         <li>
-                                            <button onClick={handleOnFlyTo}> {x.issue}<br/></button>
+                                            <button onClick={handleOnFlyTo}> {x.issue}</button>
                                            
                                         </li>
                                     </ul>
