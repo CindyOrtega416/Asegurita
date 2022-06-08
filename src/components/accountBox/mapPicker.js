@@ -195,8 +195,8 @@ function MapPicker() {
 
     return (
         <div>
-            <h2 className="headerLogo">Segurita</h2>
-            <div className="MapPicker">
+        
+            <div>
                 <Map ref={mapRef} center={[-31.4167, -64.18]} zoom={13}>
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="&copy; <a href=&quot;https://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors" />
                     {
@@ -219,6 +219,7 @@ function MapPicker() {
                                                 src={x.img}
                                                 width="150px"
                                                 height="150px"
+                                                
                                             />
                                         </Popup>
                                     </Marker>
@@ -229,18 +230,16 @@ function MapPicker() {
 
                 </Map>
             </div>
-            <div className="report" style={{  marginTop: "-70%", marginRight:"-70%", borderRadius:"19px",
-                boxShadow: "0 0 2px rgba(15, 15, 15, 0.28)", background:"#EBEBF3",  padding: "1.56vW 5% ", width:"100%"
-                }}>
+            <section class='col-lg-6 my-4  align-items-center' style={{backgroundColor:" #77C4EE",borderRadius:"12px", marginLeft:"-2000"}}>
 
-                <p style={{
-                    fontWeight: "900", fontSize: "20px", textAlign:"left"}}>Denuncias</p>
+                <p style={{ color: 'white',
+                    fontWeight: "900", fontSize: "20px", textAlign:"left" }}>Denuncias</p>
                 {
                     storeData.map(x => {
                         return (
                             <div>
 
-                                    <ul style={{  textAlign:"left"}}>
+                                    <ul >
                                         <li>
                                             <button onClick={handleOnFlyTo}> {x.issue}<br/></button>
                                            
@@ -251,7 +250,7 @@ function MapPicker() {
                         )
                     })
                 }
-            </div>
+            </section>
         </div>
     );
 }

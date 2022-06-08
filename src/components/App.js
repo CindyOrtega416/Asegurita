@@ -23,10 +23,9 @@ import MapComp from "./MapTest";
 function App() {
 
     return (
-        <Container className="d-flex align-items-center justify-content-center"
-                   style={{ minHeight: "100vh"}}>
+        <Container >
 
-            <div className="w-100" style={{ maxWidth: '1000px'}} >
+            <div>
                 <Router>
                     <AuthProvider>
                         <Switch>

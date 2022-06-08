@@ -2,7 +2,7 @@ import React, {useRef, useState} from "react";
 import { Form, Button, Card, Alert } from 'react-bootstrap'
 import {useAuth} from "../../contexts/AuthContext";
 import { Link, useHistory } from 'react-router-dom'
-import logo from '../../images/logo.jpg'
+import logo from '../../images/logo.png'
 
 export default function Login() {
     const emailRef = useRef()
@@ -29,15 +29,16 @@ export default function Login() {
 
     }
     return (
-        <section class="vh-100" style={{backgroundColor:" lightblue"}}>
-            <div class="container py-5 h-100">
+        <section class="vh-100 d-flex align-items-center justify-content-center" style={{backgroundColor:" white", minHeight: "100vh"}}>
+            <div class="container py-5 h-100 w-100" style={{ maxWidth: '1000px'}} >
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col col-xl-10">
                         <div class="card" style={{borderRadius: "1rem",  boxShadow:" 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"}}>
                             <div class="row g-0">
-                                <div class="col-md-6 col-lg-5 d-none d-md-block" style={{backgroundColor: "#095E3D",borderRadius:" 1rem 0 0 1rem"}}>
+                                <div class="col-md-6 col-lg-5 d-none d-md-block" style={{backgroundColor: "#77C4EE",borderRadius:" 1rem 0 0 1rem"}}>
                                     <img src={logo}
-                                         alt="login form" class="img-fluid" style={{borderRadius:" 1rem 0 0 1rem", objectFit:"contain"}} />
+                                         alt="login form" class="img-fluid"  height= '100px' style={{borderRadius:" 1rem 0 0 1rem"}} />
+
                                 </div>
                                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                     <div class="card-body p-4 p-lg-5 text-black">
